@@ -13,7 +13,7 @@ Students build each security gate from scratch using `TODO#` markers in `.github
 
 ---
 
-## Workshop Overview
+## Workshop Overvie
 
 | Session | Gate | Tool | Finds |
 |---------|------|------|-------|
