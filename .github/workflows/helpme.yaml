@@ -84,6 +84,13 @@ jobs:
               continue-on-error: true
               env:
                   SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+                  SONAR_HOST_URL: https://sonarcloud.io
+              with:
+                  args: >
+                      -Dsonar.projectKey=Rachanonx_DontEverPushThisCodeV2
+                      -Dsonar.organization=rachanonx
+                      -Dsonar.sources=.
+                      -Dsonar.exclusions=**/node_modules/**,**/.next/**,**/dist/**,**/build/**
 
     # GATE#1b: SAST via CodeQL (results in GitHub Security tab)
     codeql-scan:
